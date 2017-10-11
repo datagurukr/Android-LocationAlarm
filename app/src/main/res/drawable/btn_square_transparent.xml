@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/square_transparent" />
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/square_transparent_pressed" />
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/square_transparent" />
+</selector>
