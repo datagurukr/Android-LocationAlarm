@@ -5,7 +5,8 @@
     android:fitsSystemWindows="false"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBg">
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
@@ -14,7 +15,97 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+                    <fragment
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="#ccc"
+                        class="com.google.android.gms.maps.SupportMapFragment" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+                    <Button
+                        android:id="@+id/btnSms"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.33dp"
+                        android:text="112에 현재 위치 문자 전송"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@drawable/btn_round_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+                    <Button
+                        android:id="@+id/btnLocationSend"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.33dp"
+                        android:text="보호자에게 위치 전송"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@drawable/btn_round_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+                    <Button
+                        android:id="@+id/btnNfc"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.33dp"
+                        android:text="NFC 조회"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@drawable/btn_round_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+                    <Button
+                        android:id="@+id/btnSiren"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.33dp"
+                        android:text="사이렌"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@drawable/btn_round_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+                    <Button
+                        android:id="@+id/btnServiceClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.33dp"
+                        android:text="서비스 종료"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@drawable/btn_round_primary" />
+                </LinearLayout>
+            </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
     </android.support.design.widget.CoordinatorLayout>
 </RelativeLayout>

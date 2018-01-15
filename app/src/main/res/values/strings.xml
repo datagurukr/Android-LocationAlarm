@@ -2,4 +2,5 @@
     <string name="app_name">LocationAlarm</string>
     <string name="lang_activity_setting">설정</string>
     <string name="lang_activity_run">서비스 실행</string>
+    <string name="lang_activity_nfc">NFC 스캔</string>
 </resources>

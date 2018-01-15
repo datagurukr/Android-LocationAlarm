@@ -5,4 +5,5 @@
     <color name="colorAccent">#333</color>
     <color name="colorTransparent" type="color">#00000000</color>
     <color name="colorTransparent25" type="color">#19000000</color>
+    <color name="colorDefaultBg" type="color">#fff</color>
 </resources>

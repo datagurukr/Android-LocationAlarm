@@ -1,0 +1,193 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBg">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar_sub"/>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- 택시 번호 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="택시 번호"
+                        android:textColor="#333"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/editTaxiNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#fff"
+                        android:hint="택시 번호.."
+                        android:textColorHint="#ccc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 택시 기사님 성함 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="택시 기사님 성함"
+                        android:textColor="#333"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/editTaxiDriverName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#fff"
+                        android:hint="택시 기사님 성함.."
+                        android:textColorHint="#ccc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 택시 탑승 시각 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="택시 탑승 시각"
+                        android:textColor="#333"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/editTaxiGetOnTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#fff"
+                        android:hint="택시 탑승 시각.."
+                        android:textColorHint="#ccc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 택시 하차 시각 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="택시 하차 시각"
+                        android:textColor="#333"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/editTaxiGetOffTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#fff"
+                        android:hint="택시 하차 시각.."
+                        android:textColorHint="#ccc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 택시 회사 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="택시 회사"
+                        android:textColor="#333"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/editTaxiCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="택시 회사.."
+                        android:textColorHint="#ccc"
+                        android:background="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+                    <Button
+                        android:id="@+id/btnNfc"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.33dp"
+                        android:background="@drawable/btn_round_primary"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:text="NFC 스캔"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.67dp"
+                    android:layout_marginRight="30.67dp">
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.33dp"
+                        android:background="@drawable/btn_round_primary"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:text="전송하기"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
